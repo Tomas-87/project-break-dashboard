@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Fronted</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <section class="principal">
+    <article id="links" class="links">
+      <input type="text" id="titulo" required placeholder="Ingresa el Nombre">
+      <input type="text" name="link" id="link" placeholder="Ingresa la URL" required>
+
+      <button id="btnLink">Añadir Link</button>
+      <ul id="lista" class="lista"></ul>
+    </article>
+
+    <article class="idxTiempo">
+      <ul id="tiempo" class="tiempo"></ul>
+    </article>
+
+    <article id="containerReloj" class="containerReloj">
+      <div id="reloj" class="reloj"></div>
+      <div id="fecha" class="fecha"></div>
+      <p id="frase" class="frase"></p>
+    </article>
+  </section>
+
+  <article id="contraseñas" class="contraseñas">
+    <input type="number" id="inputPassword" max="50" min="12">
+    <button type="button" id="btnPassword">Crear Password</button>
+    <p id="contraseñaSegura"></p>
+  </article>
+
+  <article class="indxImg">
+    <div id="imagenes"></div>
+  </article>
+
+
+  <script type="module" src="./scripts/scripts.js"></script>
+</body>
+<footer>
+  <div class="enlacesFooter">
+    <a href="./html/contraseñas.html" target="_blank">Contraseñas</a>
+    <a href="./html/imagenes.html" target="_blank">Imagenes</a>
+    <a href="./html/index-tiempo.html" target="_blank">Tiempo</a>
+    <a href="./html/links.html" target="_blank">Links</a>
+    <a href="./html/reloj.html" target="_blank">Reloj</a>
+  </div>
+</footer>
+
+</html>

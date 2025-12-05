@@ -1,0 +1,369 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/********************************************************************/
+
+.bodyReloj {
+    background-color: black;
+    color: aqua;
+}
+
+.containerReloj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.reloj {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: solid 2px aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgba(240, 233, 241, 0.479);
+    ;
+}
+
+.fecha {
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    padding: 5px;
+    background-color: rgba(240, 233, 241, 0.479);
+}
+
+.frase {
+    margin-top: 20px;
+    color: rgb(255, 0, 0);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/**contraseñas*/
+.bodyContraseña {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.contraseñas {
+    text-align: center;
+}
+
+input {
+    width: 150px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#btnPassword {
+    width: 300px;
+    height: 75px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#contraseñaSegura {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgb(238, 18, 18);
+    color: aliceblue;
+    padding: 20px;
+}
+
+/*links*/
+.bodyLinks {
+    background-color: blueviolet;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30dvh;
+}
+
+.links input {
+    width: 200px;
+    font-size: small;
+    height: 20px;
+}
+
+.lista {
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.lista li {
+    background-color: darkgreen;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.lista button {
+    background-color: rgb(5, 5, 5);
+}
+
+#btnLink {
+    padding: 5px;
+    background-color: rgba(0, 110, 255, 0.767);
+    top: 0;
+}
+
+@media (max-width: 370px) {
+    #btnLink {
+        margin-top: -80px;
+    }
+
+    .lista {
+        width: 150px;
+    }
+
+    .lista li {
+        padding: 5px;
+    }
+
+    .lista li a {
+        font-size: 12px;
+        font-weight: lighter;
+    }
+}
+
+/*******tiempo***************************/
+.bodyTiempo {
+    background-color: aqua;
+}
+
+.tituloTiempo {
+    position: sticky;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-right: 80px;
+}
+
+.tituloTiempo img {
+    width: 10dvw;
+}
+
+.tituloTiempo h3 {
+    font-size: x-large;
+}
+
+.lugar {
+    background-color: antiquewhite;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.infoTiempo {
+    background-color: antiquewhite;
+    height: fit-content;
+    width: 300px;
+    line-height: 25px;
+    margin: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.porHoras {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    overflow-x: auto;
+}
+
+.hora {
+    border: solid 1px black;
+    padding: 10px;
+    height: fit-content;
+    margin: 10px;
+    background-color: antiquewhite;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.enlacesFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+.enlacesFooter a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
