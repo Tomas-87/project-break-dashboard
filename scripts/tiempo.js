@@ -1,11 +1,9 @@
-import './imagenes.js'
-
 //**************** */ api key   '5b92565559da46d7b6490336250212'
 const apiKey = '5b92565559da46d7b6490336250212',
   city = 'Valderrobres',
   api = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=no&alerts=no`;
 ;
-tiempo = document.getElementById('tiempo')
+const tiempo = document.getElementById('tiempo')
 
 
 

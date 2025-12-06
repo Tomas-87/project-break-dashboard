@@ -1,10 +1,7 @@
-import './imagenes.js'
-
 const btnPassword = document.getElementById('btnPassword'),
     inputPassword = document.getElementById('inputPassword'),
     contraseñaSegura = document.getElementById('contraseñaSegura');
 
-// Tendremos un input dónde meteremos la longitud de la contraseña y un botón para que nos de el resultado.
 
 const arrContraseñas = {
     mayus: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",

@@ -1,4 +1,3 @@
-import './imagenes.js'
 
 const reloj = document.getElementById('reloj')
 const fecha = document.getElementById('fecha')

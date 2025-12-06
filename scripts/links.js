@@ -1,4 +1,3 @@
-import './imagenes.js'
 
 const btnLink = document.getElementById('btnLink'),
     titulo = document.getElementById('titulo'),
