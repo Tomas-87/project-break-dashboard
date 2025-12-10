@@ -30,6 +30,7 @@ const crearLi = ({
     <div class="lugar">
       <h3>En estos momentos el Tiempo en:</h3>
       <h3>${name} ${country}</h3>
+      <img src="${icon}" />
     </div>
     <div class="infoTiempo">
       <p>Tiempo: ${text}</p>
@@ -38,7 +39,6 @@ const crearLi = ({
       <p>Humedad: ${humidity}</p>
       <p>Viento: ${wind_kph} Kmhora</p>
     </div>
-    <img src="${icon}" />
   </div>
   <div class="porHoras">
       ${horas.map(h => `
@@ -60,9 +60,9 @@ const renderTiempo = (time) => {
   tiempo.innerHTML = ''
   tiempo.appendChild(crearLi(time))
 
-  if (location.pathname.includes('index.html')) {
-    const horas = document.querySelector('.porHoras')
-    if (horas) horas.style.display = 'none'
+  if (location.pathname.endsWith('index.html') || location.pathname.endsWith('/')) {
+    const horas = document.querySelector('.porHoras');
+    if (horas) horas.style.display = 'none';
   }
 }
 
