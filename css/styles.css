@@ -132,8 +132,7 @@ table {
 /********************************************************************/
 
 .bodyReloj {
-    background-color: black;
-    color: aqua;
+    color: rgb(2, 9, 102);
 }
 
 .containerReloj {
@@ -145,7 +144,6 @@ table {
 }
 
 .reloj {
-    position: relative;
     width: 200px;
     height: 200px;
     padding: 20px;
@@ -154,17 +152,9 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-weight: bold;
     font-size: 30px;
-    background-color: rgba(240, 233, 241, 0.479);
-    ;
-}
-
-.fecha {
-    position: absolute;
-    font-size: 20px;
-    top: 55%;
-    padding: 5px;
     background-color: rgba(240, 233, 241, 0.479);
 }
 
@@ -177,7 +167,6 @@ table {
 
 /**contraseñas*/
 .bodyContraseña {
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +240,9 @@ input {
 }
 
 .lista button {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(255, 17, 17);
+    padding: 5px;
+    color: white;
 }
 
 #btnLink {
@@ -289,7 +280,6 @@ input {
     left: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
     align-items: center;
     width: 100%;
     padding: 20px;
@@ -305,6 +295,7 @@ input {
 }
 
 .lugar {
+    margin-left: 200px;
     background-color: antiquewhite;
     line-height: 30px;
     padding: 20px;
@@ -339,6 +330,7 @@ input {
     letter-spacing: 1px;
 }
 
+/******principal*********/
 html,
 body {
     height: 100%;
@@ -363,7 +355,31 @@ body {
 .principal {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.principalDos {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 200px;
+    flex-wrap: wrap;
+    margin-top: -200px;
+}
+
+article.containerReloj {
+    margin-top: -191px;
+    margin-bottom: 100px;
+}
+
+.fecha {
+    margin-top: -150px;
+}
+
+article {
+    width: 400px;
+}
+
+.indexTiempo {
+    margin-left: 150px;
 }

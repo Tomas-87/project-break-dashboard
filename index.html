@@ -12,6 +12,7 @@
   <div id="imagenes"></div>
 
   <section class="principal">
+
     <article id="links" class="links">
       <input type="text" id="titulo" required placeholder="Ingresa el Nombre">
       <input type="text" name="link" id="link" placeholder="Ingresa la URL" required>
@@ -20,26 +21,24 @@
       <ul id="lista" class="lista"></ul>
     </article>
 
-    <article class="idxTiempo">
-      <ul id="tiempo" class="tiempo"></ul>
-    </article>
-
     <article id="containerReloj" class="containerReloj">
+      <div id="frase" class="frase"></div>
       <div id="reloj" class="reloj"></div>
-      <div id="fecha" class="fecha"></div>
-      <p id="frase" class="frase"></p>
+      <div id="fecha" class="fecha" class="fecha-Index"></div>
     </article>
   </section>
 
-  <article id="contraseñas" class="contraseñas">
-    <input type="number" id="inputPassword" max="50" min="12">
-    <button type="button" id="btnPassword">Crear Password</button>
-    <p id="contraseñaSegura"></p>
-  </article>
+  <section class="principalDos">
+    <article class="idexTiempo">
+      <ul id="tiempo" class="tiempo"></ul>
+    </article>
 
-  <article class="indxImg">
-    <div id="imagenes"></div>
-  </article>
+    <article id="contraseñas" class="contraseñas">
+      <input type="number" id="inputPassword" max="50" min="12">
+      <button type="button" id="btnPassword">Crear Password</button>
+      <p id="contraseñaSegura"></p>
+    </article>
+  </section>
 
   <script type="module" src="./scripts/imagenes.js"></script>
   <script type="module" src="./scripts/scripts.js"></script>

@@ -1,9 +1,8 @@
 //**************** */ api key   '5b92565559da46d7b6490336250212'
 const apiKey = '5b92565559da46d7b6490336250212',
   city = 'Valderrobres',
-  api = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=no&alerts=no`;
-;
-const tiempo = document.getElementById('tiempo')
+  api = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=no&alerts=no`,
+  tiempo = document.getElementById('tiempo');
 
 
 
@@ -60,13 +59,17 @@ const crearLi = ({
 const renderTiempo = (time) => {
   tiempo.innerHTML = ''
   tiempo.appendChild(crearLi(time))
+
+  if (location.pathname.includes('index.html')) {
+    const horas = document.querySelector('.porHoras')
+    if (horas) horas.style.display = 'none'
+  }
 }
 
 
 const cargar = async () => {
   try {
     const data = await fetchData()
-    console.log(data)
     renderTiempo(data)
   } catch (error) {
     console.log(error)

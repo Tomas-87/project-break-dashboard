@@ -40,15 +40,16 @@ btnLink.addEventListener('click', () => {
     const nuevoTexto = { titulo: nombre, url: enlace }
 
     lista.appendChild(crearLi(nuevoTexto))
-    const local = JSON.parse(localStorage.getItem('link')) || []
-    local.push(nuevoTexto)
-    localStorage.setItem('link', JSON.stringify(local))
-
+    guardarLocal(nuevoTexto)
     titulo.value = ''
     link.value = ''
 })
 
-
+function guardarLocal(nuevoTexto) {
+    const local = JSON.parse(localStorage.getItem('link')) || []
+    local.push(nuevoTexto)
+    localStorage.setItem('link', JSON.stringify(local))
+}
 
 
 function eliminarLocal(url) {
