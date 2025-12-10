@@ -5,7 +5,7 @@ const apiKey = '5b92565559da46d7b6490336250212',
   tiempo = document.getElementById('tiempo');
 
 
-
+//llamada api
 const fetchData = async () => {
   try {
     const res = await fetch(api)
@@ -18,12 +18,14 @@ const fetchData = async () => {
 }
 
 const crearLi = ({
+  //destructuring
   forecast: { forecastday },
   location: { country, name, },
   current: { condition: { icon, text, },
     temp_c, precip_mm, humidity, wind_kph } }) => {
   const horas = forecastday[0].hour
 
+  //crear elementos
   const li = document.createElement('li')
   li.innerHTML = `
   <div class="tituloTiempo">

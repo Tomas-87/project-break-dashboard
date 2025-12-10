@@ -10,6 +10,7 @@ const arrContraseñas = {
     signos: "!@#$%^&*()-_=+"
 }
 
+//juntar todos los elementos en una sola variable para recorrerla toda aleatoria
 const todosJuntos = arrContraseñas.mayus + arrContraseñas.minus + arrContraseñas.numeros + arrContraseñas.signos
 
 function aleatorio(max) {

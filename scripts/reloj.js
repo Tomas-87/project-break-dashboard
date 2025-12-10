@@ -2,6 +2,7 @@
 const reloj = document.getElementById('reloj');
 const frase = document.getElementById('frase');
 
+//construir reloj 2 digitos
 const actualizarReloj = () => {
   const opcionesReloj = {
     timeZone: 'Europe/Madrid',
@@ -12,6 +13,7 @@ const actualizarReloj = () => {
 
   const horaValde = Intl.DateTimeFormat('es-Es', opcionesReloj).format(new Date()),
     [hour, minute] = horaValde.split(':'),
+    //convertimos horas y minutos en un solo numro numero
     hm = Number(hour + minute);
 
   if (hm > 1 && hm <= 700) {
@@ -33,6 +35,7 @@ const actualizarReloj = () => {
   return horaValde
 }
 
+//creamos la fecha 
 const actualizarFecha = () => {
   const opcionesFecha = {
     timeZone: 'Europe/Madrid',
@@ -44,6 +47,7 @@ const actualizarFecha = () => {
   return fechaValde;
 }
 
+//crear elemento
 function crearH3(hora) {
   const h3 = document.createElement('h3')
   h3.classList.add('hora')
@@ -62,6 +66,7 @@ function cargar() {
   reloj.appendChild(h3Fecha)
 }
 
+//recargar reloj y fecha cada segundo
 setInterval(cargar, 1000);
 cargar();
 

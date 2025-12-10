@@ -3,4 +3,3 @@ import './links.js';
 import './reloj.js';
 import './tiempo.js';
 
-console.log(location.pathname);

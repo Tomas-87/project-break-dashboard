@@ -45,20 +45,21 @@ btnLink.addEventListener('click', () => {
     link.value = ''
 })
 
+//guardamos en localStorage
 function guardarLocal(nuevoTexto) {
     const local = JSON.parse(localStorage.getItem('link')) || []
     local.push(nuevoTexto)
     localStorage.setItem('link', JSON.stringify(local))
 }
 
-
+//eliminamos de localStorage
 function eliminarLocal(url) {
     const link = JSON.parse(localStorage.getItem('link')) || []
     const actualizado = link.filter(f => f.url !== url)
     localStorage.setItem('link', JSON.stringify(actualizado))
 }
 
-
+//cargamos la pagina al inniciar con lo que hay en el local
 window.addEventListener('DOMContentLoaded', () => {
     const link = JSON.parse(localStorage.getItem('link')) || []
 
