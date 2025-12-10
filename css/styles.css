@@ -334,6 +334,8 @@ input {
 html,
 body {
   height: 100%;
+  background: #51f1fc;
+  background: linear-gradient(178deg, rgba(81, 241, 252, 0.59) 0%, rgba(24, 190, 219, 0.33) 15%, rgba(0, 212, 255, 1) 100%);
 }
 
 footer {
@@ -375,6 +377,7 @@ footer {
 article.containerReloj {
   margin-top: -191px;
   margin-bottom: 100px;
+  width: 100dvw;
 }
 
 .fecha {
@@ -408,6 +411,7 @@ article {
     height: 140px;
     font-size: 20px;
     padding: 10px;
+    text-align: center;
   }
 
   .containerReloj,
@@ -415,6 +419,7 @@ article {
   .bodyLinks,
   .bodyTiempo {
     padding: 10px;
+    justify-content: center;
   }
 
   .containerReloj {
