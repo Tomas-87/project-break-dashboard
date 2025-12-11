@@ -158,6 +158,10 @@ table {
   background-color: rgba(240, 233, 241, 0.479);
 }
 
+.hora {
+  font-size: 30px;
+}
+
 .frase {
   margin-top: 20px;
   color: rgb(255, 0, 0);
@@ -377,7 +381,6 @@ footer {
 article.containerReloj {
   margin-top: -191px;
   margin-bottom: 100px;
-  width: 100dvw;
 }
 
 .fecha {
@@ -398,8 +401,6 @@ article {
   /* Texto más pequeño */
   body {
     font-size: 14px;
-    background-color: #51f1fc;
-    background-color: linear-gradient(178deg, rgba(81, 241, 252, 0.59) 0%, rgba(24, 190, 219, 0.33) 15%, rgba(0, 212, 255, 1) 100%);
   }
 
   h1,
