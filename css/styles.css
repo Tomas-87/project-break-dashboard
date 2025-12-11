@@ -401,100 +401,100 @@ article {
     background-color: #51f1fc;
     background-color: linear-gradient(178deg, rgba(81, 241, 252, 0.59) 0%, rgba(24, 190, 219, 0.33) 15%, rgba(0, 212, 255, 1) 100%);
   }
-}
 
-h1,
-h2,
-h3 {
-  font-size: 18px;
-}
+  h1,
+  h2,
+  h3 {
+    font-size: 18px;
+  }
 
-.reloj {
-  width: 140px;
-  height: 140px;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-}
+  .reloj {
+    width: 140px;
+    height: 140px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
 
-.containerReloj,
-.bodyContraseña,
-.bodyLinks,
-.bodyTiempo {
-  padding: 10px;
-  justify-content: center;
-}
+  .containerReloj,
+  .bodyContraseña,
+  .bodyLinks,
+  .bodyTiempo {
+    padding: 10px;
+    justify-content: center;
+  }
 
-.containerReloj {
-  margin-bottom: 5px;
-  height: auto;
-  padding-bottom: 140px;
-}
+  .containerReloj {
+    margin-bottom: 5px;
+    height: auto;
+    padding-bottom: 140px;
+  }
 
-article.containerReloj {
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
+  article.containerReloj {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 
-input {
-  width: 120px;
-  height: 50px;
-  font-size: 20px;
-}
+  input {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
 
-#btnPassword {
-  width: 200px;
-  height: 60px;
-  font-size: 22px;
-}
+  #btnPassword {
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+  }
 
-.lista {
-  margin-top: 40px;
-}
+  .lista {
+    margin-top: 40px;
+  }
 
-.tituloTiempo {
-  flex-direction: column;
-  margin: 0;
-  padding: 10px;
-}
+  .tituloTiempo {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+  }
 
-.tituloTiempo img {
-  width: 25dvw;
-}
+  .tituloTiempo img {
+    width: 25dvw;
+  }
 
-.lugar,
-.infoTiempo {
-  margin: 10px 0;
-  width: 90%;
-  font-size: 14px;
-  padding: 10px;
-}
+  .lugar,
+  .infoTiempo {
+    margin: 10px 0;
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
 
-.porHoras {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  width: 100%;
-  margin: 0;
-}
+  .porHoras {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    margin: 0;
+  }
 
-.hora {
-  width: 120px;
-  font-size: 12px;
-  padding: 5px;
-  margin: 5px;
-}
+  .hora {
+    width: 120px;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+  }
 
-.enlacesFooter a {
-  font-size: 14px;
-}
+  .enlacesFooter a {
+    font-size: 14px;
+  }
 
-article {
-  width: 90%;
-  margin: 0 auto;
-}
+  article {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.principal,
-.principalDos {
-  justify-content: center;
-  margin-top: 0;
+  .principal,
+  .principalDos {
+    justify-content: center;
+    margin-top: 0;
+  }
 }
