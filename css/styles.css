@@ -381,6 +381,7 @@ footer {
 article.containerReloj {
   margin-top: -191px;
   margin-bottom: 100px;
+  width: 400px;
 }
 
 .fecha {
